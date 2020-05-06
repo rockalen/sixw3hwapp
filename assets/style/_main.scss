@@ -1,0 +1,734 @@
+
+.banner-bg{   
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.banner{
+    height: 840px;
+    color: $dp-red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* padding-right: 360px; */
+    font-weight: 700;
+    p{
+        line-height: 56px;
+        font-size: 36px;
+    }
+}
+
+
+/* header2020 早春系列(平板) */
+@media (max-width:768px){
+   
+    .banner p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .banner-bg{
+        background-image: url(https://rockalen.github.io/w3HomeWork/images/68.png);
+       
+    }
+   
+}
+
+/* header2020 早春系列(手機) */
+@media (max-width:375px){
+    
+    .banner{
+        height: 394px;
+        .p{
+            font-size: 16px;
+        }
+    }
+    .banner-bg{
+        background-image: url(https://rockalen.github.io/w3HomeWork/images/banner-phone.png);
+        background-size: cover;
+    }   
+}
+
+.prof{
+    background-color: $lt-pink;
+}
+.prof-item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    li{
+        width: 25%;
+        padding: 0 37px;
+        margin: 0 12px;
+        text-align: center;
+    }
+    li:first-child{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    li:last-child{
+        padding-right: 0;
+        margin-right: 0;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+    
+    p{
+        font-weight: 600;
+        margin-top: 4px;
+        text-align: left;
+    }
+
+}
+
+/* prof(平板) */
+@media (max-width:768px){
+    .prof-item{
+        flex-wrap: wrap;
+        margin-top: 2rem;
+
+        li{
+            width: 46%;
+            padding: 0 50px;
+            margin-bottom: 32px;
+        }
+        li:first-child{
+            padding-left: 50px;
+            margin-left: 12px;
+        }
+        li:last-child{
+            padding-right: 50px;
+            margin-right: 12px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 16px;
+        }    
+        p{
+            margin-top: 8px;
+        }
+    }   
+    
+    .order-1{
+        order:1;
+    }
+    .order-2{
+        order:2;
+    }
+}
+
+/* (手機) */
+@media (max-width:375px){
+    .prof-item li{
+        width: 100%;
+    }
+    
+}
+/* product 經典系列鏡框 */
+
+.product-list{    
+    margin-top: 60px;
+    padding-bottom: 48px;
+    /* display: flex; */
+    /* justify-content: center; */
+    li{    
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;   
+    }
+    
+    h3{ 
+        /* width: 45%; */
+        display: flex;
+        align-items: center;
+        color: $md-red;
+        font-style: italic;
+        font-weight: 700;
+    }
+    // .product-list li:nth-child(2) h3{
+    //     /* width: 50%; */
+    // }
+    li:nth-child(2) img{
+        width: 100%;
+    }
+    li:nth-child(2) h3 img{
+        width: auto;
+    }
+}
+
+
+.sunglasses{
+    flex-direction: row-reverse;
+}
+
+.sunglasses div{    
+    margin-bottom: 0px;
+}
+
+.sg-img{
+    /* width: 100%; */
+    display: flex;
+    position: relative; 
+}
+.sg-img::before{
+    content: "";    
+    position: absolute;
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/15.png);
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.sg-img:hover::before {
+    opacity: 1;
+}
+
+/* 經典系列鏡框(平板) */
+@media (max-width:768px) {
+    .product-list{
+        margin-top: 32px;
+    }
+    .product-list li{
+        margin-bottom: 8px;
+    }
+    .product-list h3{ 
+        width: 100%;
+    }
+    .product-list li:nth-child(2){
+        flex-direction: row;
+    }
+    .product-list li:nth-child(2) h3 {
+        margin-right: 0;
+    }
+
+    .product-list img{
+        width: 50%;
+        /* margin-right: 0; */
+    }
+    .product-list h3{
+        /* width: 50%; */
+        font-size: 2.55rem;        
+        justify-content: center;        
+    }
+    .product-list h3 img{
+        width: 10%;
+           
+    }
+    .product-list li:nth-child(2) h3 img{
+        width: 10%;
+    }
+    .sg-img{
+        margin-left: 0;
+        width: 100%;
+        /* margin-right: 1.85%; */
+    }
+    
+
+}
+/* 經典系列鏡框(手機) */
+
+@media(max-width: 375px) {
+    .product-list li{
+        position: relative;
+        
+    }
+
+    .product-list img{
+       width: 100%; 
+    }
+    .product-list h3{
+        font-size: 28px;
+        line-height: 42px;
+        position: absolute;
+        color: $white;
+    }
+    .optical h3 img{
+        width: 32px;
+        margin-right: 0.5rem;
+        content: url('https://rockalen.github.io/w3HomeWork/images/icon-diamond-white.svg')
+     }
+    .sunglasses h3 img{
+        width: 32px;
+        margin-right: 0.5rem;
+        content: url('https://rockalen.github.io/w3HomeWork/images/icon-sun-white.svg')
+     }
+    .functional h3 img{
+       width: 23px;
+       margin-right: 0.5rem;
+       content: url('https://rockalen.github.io/w3HomeWork/images/icon-thunder-white.svg')
+    }
+}
+
+/* 聯名設計鏡框 */
+.design{
+    background-size: auto 2162px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.joint-dgn{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    max-width: 1539px;
+    display: flex;
+}
+
+.joint-dgn-col{
+    display: flex;
+    flex-direction: column;
+}
+.joint-dgn-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.joint-dgn-phone-block{
+    display: none;
+}
+/* .joint-dgn-item5{
+    
+    margin-bottom: 8px;
+} */
+
+
+/* .joint-dgn-more{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 167px;
+    background-image: url(../images/more.png);
+    background-repeat: no-repeat;
+    background-position: right 78px top 8px;
+} */
+
+
+.joint-dgn-more{
+    width: 100%;
+    /* height: 50%; */
+    /* height: 100%; */
+    position: relative;
+    margin-top: 6px;
+    /* padding-right: 78px; */
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.joint-dgn-more span::before{
+    content: "MORE";
+    position: absolute;
+    transition: all .65s .3s;
+    transform: translateY(0px);
+}
+.joint-dgn-more span:hover::before{
+    transform: translateY(-85px);
+    opacity: .7;
+}
+
+.joint-dgn-more span::after{
+    content: "MORE";
+    position: absolute;
+    transition: all .65s .3s;
+    transform: translateY(0px);
+}
+.joint-dgn-more span:hover::after{
+    transform: translateY(-145px);
+    opacity: .4;
+}
+
+.joint-dgn-more:hover span img:last-child{
+    transform: translateX(15px);
+}
+.joint-dgn-more img{
+    margin-right: 83px;
+}
+
+
+.joint-dgn-more span img{
+    margin-top: 10px;
+    margin-left: 17px;
+}
+.joint-dgn-more span{
+    padding-left: 32px;
+    padding-right: 19px;
+    top:16%;
+    position: absolute;
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    /* height: 105px; */
+    max-width: 315px;
+    /* text-align: center; */
+    background-color: $white;
+    font-size: 72px;
+    font-weight: 700;
+    color: $md-red;
+    line-height: 108px;
+}
+
+
+
+.joint-dgn-box{
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    color: $md-red;
+    font-size: 72px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.joint-dgn-box li{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 592px;    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.joint-dgn-box li::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content:"";
+    background:rgba(255, 255, 255,0.5) ;
+
+}
+.joint-dgn-box li span{
+    z-index: 10000;
+}
+.joint-dgn-box-item1{
+       
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/product-8.png);
+    margin-right: 30px;    
+}
+
+.joint-dgn-box-item2{    
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/product-9.png);    
+}
+/* design聯名設計(平板) */
+@media (max-width:768px){
+    .design{
+        background-size: auto 1221px;
+    }
+    
+    .joint-dgn{
+        max-width:672px;
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+    .joint-dgn-phone-block{
+        display: none;
+    }
+    .joint-dgn-more{
+        margin-top: 0;
+    }
+    
+    .joint-dgn-more img{
+        /* width: 35%; */
+        /* height: 35%; */
+        margin-right: 47px;
+    }
+    .joint-dgn img{
+        /* margin-right: 0.3rem; */
+    }
+    .joint-dgn-more div{
+        /* margin-top: 0; */
+        width: 147px;
+        height: 77px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .joint-dgn-more span{
+        padding-left: 19px;
+        /* padding-right: 19px; */
+        top: 9%;
+        font-size: 40px;
+        line-height: 59px;
+        max-width: 178px;
+    }
+    .joint-dgn-more span img {        
+        width: 22px;
+        margin-top: 7px;
+        margin-left: 10px;
+        
+    }
+    .joint-dgn-box{
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+    .joint-dgn-box li{
+        /* max-width: 322px; */
+        height: 280px;
+    }
+}
+
+/* design聯名設計(手機) */
+@media (max-width:375px){
+    .joint-dgn{
+        max-width:327px;
+    }
+    .joint-dgn-box{
+        flex-wrap: wrap;
+    }
+    .joint-dgn-box li{
+        max-width:100%;
+        width: 100%;
+    }
+    .joint-dgn-phone-block{
+        display: flex;
+        margin-bottom: 2px;
+    }
+    .box-hidden{
+        display: none;
+    }
+    .joint-dgn-col img{
+        max-width: 169px;
+    }
+    .joint-dgn-box-item1{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .joint-dgn-item4 img{
+        min-width: 156px;
+        max-height: 226px;
+    }
+    .joint-dgn-more{
+        justify-content: flex-start;
+    }
+    .joint-dgn-more span {
+        padding-left: 12px;
+        top: 34px;
+        left: 13px;
+        font-size: 26px;
+        line-height: 41px;
+        max-width: 124px;
+    }
+    .joint-dgn-p6 img{
+        max-width: 32px;
+        min-height:99px;
+    }
+
+    .joint-dgn-item7{
+        /* width: 76%; */
+    }
+    .joint-dgn-more div{
+        justify-content: flex-start;
+        /* align-items: center; */
+        height: 53px;
+        margin-top: 28px;
+    }
+    .joint-dgn-more div img{
+        
+        width: 102px;       
+    }
+    .joint-dgn-more span img{
+        margin-top: 0;
+        margin-left: 8px;
+        width: 18px;
+    }
+
+
+}
+.recommend-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    li{
+        width: 23.5%;
+        font-size: 16px;
+        background-color: $white;
+        border-color: $lt-blue-ashes;
+        border-style: solid; 
+        div{
+            border-color: $lt-blue-ashes;
+            border-style: solid;
+            border-width: 0px 1px 1px 1px;
+        }
+        p{    
+            padding: 16px;
+            padding-top: 0px;
+            p:last-child{ 
+                line-height: 21px;     
+            }     
+        }  
+        
+    }
+    
+    h3{
+        padding: 16px;
+        line-height: 21px;
+        font-weight: 600;   
+    }     
+    
+}
+
+
+
+/* 顧客推薦recommend(平板) */
+@media (max-width:768px){
+    .recommend-list{
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .recommend-list li{
+        width: 48.4%;
+        p:last-child {
+            color: $md-grey;
+        }
+    }
+
+    
+}
+/* 顧客推薦recommend(手機) */
+@media (max-width:375px) {
+    .recommend-list li{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+
+/* 聯絡我們contact(PC) */
+label {
+    display: block;
+}
+.contact{
+    background-color: $lt-pink;
+    /* 為了能讓H2的mt在contact內(被景色能一致)，故要使用flex */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 92px;    
+}
+.contact-container{    
+    max-width: 792px;
+    margin: 0 auto;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-top: 24px;
+        margin-bottom: 18px;
+    }
+    label{
+        margin-bottom: 4px;
+    }
+    
+    input,textarea{
+        width: 100%;
+        font-family:'Microsoft JhengHei';
+        font-size: 16px;
+        border: 1px solid $black;
+    }
+    input{   
+        padding:12.5px 16px;    
+    }
+    
+    textarea {
+        height: 136px;
+        padding: 14px 16px;
+        box-sizing: border-box;
+        /* border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8; */
+        resize: none;
+    }
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    label{
+        margin-bottom: 0;
+        line-height: 24px;
+    }
+    input{
+        margin: 4px;
+        width: 22px; 
+        height: 22px;
+    }
+}
+
+
+.frm-btn{
+    display: block;
+    width: 180px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #ffffff;
+    background-color: $md-red;
+}
+
+/* contact聯絡我們(平板) */
+@media (max-width:768px){
+    .contact{
+        font-size: 16px;
+        padding-bottom: 56px;
+    }
+    .contact-container{    
+        max-width: 498px; 
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 1rem;
+            margin-bottom: 0.875rem;
+        }
+    }
+
+    
+
+    .frm-btn{
+        width: 136px;
+        height: 36px;
+        line-height: 36px;
+    }
+}
+/* contact聯絡我們(手機) */
+@media (max-width:375px){
+    .contact{
+        padding-bottom: 6rem;
+    }
+    .contact-container{        
+        max-width:327px;
+        p{
+            font-size: 2rem;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+        }
+        label{
+            font-size: 2rem;
+            line-height: 21px;
+        }
+    }    
+
+    .checkbox{
+        align-items: start;
+        input{
+            margin-top: 0;
+        }
+    }    
+
+    .frm-btn{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}

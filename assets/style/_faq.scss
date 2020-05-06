@@ -1,0 +1,172 @@
+// FAQ電腦版開始
+.faq-banner-bg{
+    position: relative;
+    // height: 304px;
+    // background-image:  url(../images/faq.png);
+    // background-size: cover;
+    // background-repeat: no-repeat;    
+    // padding-bottom: 16px;    
+}
+
+.faq-banner{
+    display: flex;
+    align-items: flex-end;
+
+    h2{
+      position: absolute;
+      bottom: 16px;      
+      display: flex;
+      align-items: center;
+      
+      img{
+        margin-left: 16px;
+      }
+    }   
+}
+
+.faq-banner-pad{
+  display: none;
+}
+
+.faq-banner-phone{
+  display: none;
+}
+
+.dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    max-height: 0px;
+    transition: all 0.8s;
+    overflow: hidden;
+    z-index: 120;
+  }
+  .dropdown.active {
+    max-height: 200px;
+  }
+  
+  .dropdown li a {
+    display: block;
+    background: $md-red;
+    color: $white;
+    border-top: 1px solid $white;
+    padding: 16px 0;
+    text-decoration: none;
+  }
+  .dropdown li a:hover {
+    background: $carmine;
+  }
+  .sec-page h3 {
+    font-size: 32px;
+    line-height: 63px;
+    font-weight: bold;
+    margin-top: 88px;
+    margin-bottom: 16px;
+  }
+  .faq{
+    margin-bottom: 156px;
+  }
+  .faq-item{
+    border: 1px solid $black;
+  }
+  .faq-item-header{
+    padding: 22px 38px;
+    border-bottom:1px solid $black;
+    a {
+      text-decoration: none;
+      color:$black;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+     }
+     
+    h4{
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: bold;
+    }
+  }
+  
+  .faq-item-body{
+    background-color: $lt-grey;
+    padding: 22px 38px;
+    padding-right: 246px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .faq-item:not(.active) .up{
+    display: none;
+  }
+  .faq-item.active .down{
+    display: none;
+  }
+// FAQ平板
+@media(max-width: 768px){
+  .faq-banner-pc{
+    display: none;
+  }
+  .faq-banner-pad {
+    display: flex;
+    align-items: center;
+  }
+
+  .faq-banner h2 img{
+    width: 48px;
+    background: $white;
+    border-radius: 50%;
+  }
+  .sec-page h3{
+    font-size: 28px;
+    line-height: 63px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  
+  .faq-item-header{
+    padding: 16px 24px;
+    h4{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .faq-item-body{
+    font-size: 14px;
+    line-height: 21px;
+    padding: 16px 24px;
+  }
+  .faq{
+    margin-bottom: 104px;
+  }
+}
+// AFQ手機版
+@media (max-width:375px){
+
+  .faq{
+    margin-bottom: 56px;
+  }
+  .faq-banner h2{
+    font-size: 28px;
+    bottom: 8px;
+    img{
+      width: 24px;
+      margin-left: 8px;      
+    }
+  }  
+
+  .sec-page h3{
+    font-size: 20px;
+    line-height: 28px;    
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .faq-item-header{
+    padding: 16px;
+  }
+  .faq-item-body{
+    padding: 16px;
+  }
+}
+
+  

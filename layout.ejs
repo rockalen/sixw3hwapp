@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+   <!-- 載入 jQuery 核心 -->
+   <script src="./assets/script/jquery.min.js"></script>
+   <!-- 網站 all.js -->
+   <script src="./assets/script/all.js"></script>
+</head>
+
+<body>
+  <header class="header">    
+      <div class="menu">
+          <a href="#" class="ham-icon">
+              <i class="fas fa-bars "></i>
+          </a>
+          <img src="./assets/images/logo.png" alt="公司logo" class="logo">
+          <ul class="navbar">
+              <li><a href="#">系列鏡框</a></li>
+              <li><a href="#">門市據點</a></li>
+              <li><a href="#">部落格</a></li>
+              <li><a href="faq.html" target="_self">常見問題</a></li>
+          </ul>
+      </div>
+  </header>
+
+  <%- contents %>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="ft-phone-bar">
+          <div class="footer-bar pt-6 mb-4">
+              <ul class="ft-main-menu">
+                  <li><a href="index.html">首頁</a></li>
+                  <li><a href="#">系列鏡框</a></li>
+                  <li><a href="#">門市據點</a></li>
+                  <li><a href="#">部落格</a></li>
+                  <li><a href="#">常見問題</a></li>
+              </ul>
+              <ul class="ft-social-menu">
+                  <li><a href="#"><img src="./assets/images/icon-fb.svg" alt=""></a></li>
+                  <li><a href="#"><img src="./assets/images/icon-ig.svg" alt=""></a></li>
+                  <li><a href="#"><img src="./assets/images/icon-line.svg" alt=""></a></li>
+              </ul>
+          </div>
+          <ul class="call">
+              <li><img src="./assets/images/icon-phone.svg" alt="mobile">0800-000-000</li>
+              <li><img src="./assets/images/icon-mail.svg" alt="E-mail">glasses@business.com</li>
+          </ul>
+      </div>
+      <div class="ft-end">
+          <div class="copyright">
+              <img src="./assets/images/logo.png" alt="">
+          </div>
+          
+          
+          <ul class="policy">
+              <li >
+              Copyright © 2020 Glasses.All rights reserved.
+          </li>
+              <li><a href="#">隱私權政策</a></li>
+              <li><a href="#">服務條款</a></li>
+          </ul>
+      </div>
+  </div>
+  </footer>
+</body>
+
+</html>
