@@ -209,25 +209,28 @@ body {
 
 .navbar{
     display: flex;
+    li a{
+        display: block;
+        line-height: 30px;
+        font-size: 20px;
+        padding: 16px;
+        margin: 24px 16px;
+        color: #ffffff;
+        &:hover{
+            padding-bottom: 5px;
+            border-bottom: 3px solid #fff;
+            border-radius: 5px;
+        }
+
+    }
+    
+    li:last-child a{
+        /* padding-right: 0; */
+        margin-right: 0;
+    }
 }
 
-.navbar li a{
-    display: block;
-    line-height: 30px;
-    font-size: 20px;
-    padding: 16px;
-    margin: 24px 16px;
-    color: #ffffff;
-}
-.navbar li a:hover{
-    padding-bottom: 5px;
-    border-bottom: 3px solid #fff;
-    border-radius: 5px;
-}
-.navbar li:last-child a{
-    /* padding-right: 0; */
-    margin-right: 0;
-}
+
 
 /* header2020 早春系列(平板) */
 @media (max-width:768px){
@@ -284,19 +287,23 @@ body {
     .navbar{
         /* display: flex; */
         flex-direction: column;
+        li a {
+            display: block;
+            background: #AA0601;
+            color: #FFFFFF;
+            border-top: 1px solid #FFFFFF;
+            padding: 15px 0;
+            margin: 0;
+            text-decoration: none;
+            &:hover {
+                background: #8f0400;
+                padding-bottom: 15px; 
+                border-bottom: 0;
+            }    
+
+        }
+        
+
     }  
-    .navbar li a {
-        display: block;
-        background: #AA0601;
-        color: #FFFFFF;
-        border-top: 1px solid #FFFFFF;
-        padding: 15px 0;
-        margin: 0;
-        text-decoration: none;
-    }
-    .navbar li a:hover {
-        background: #8f0400;
-        padding-bottom: 15px; 
-        border-bottom: 0;
-    }    
+    
 }
